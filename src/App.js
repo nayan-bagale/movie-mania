@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Layout from "./Layout";
+import github_logo from "./assets/github-mark-white.png";
 
 function App() {
+  const style = {
+    height: 0,
+    borderTop: "100px solid rgb(75 85 99 / var(--tw-bg-opacity))",
+    borderLeft: "100px solid transparent",
+  };
+  const logo = {
+    top: "-85px",
+    left: "-45px",
+    right: "5px"
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className=" font-poppins bg-stone-900 h-screen flex justify-center items-center">
+      <div className=" absolute top-0 right-0" style={style}>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/nayan-bagale/"
           target="_blank"
-          rel="noopener noreferrer"
+          className=" absolute"
+          style={logo}
         >
-          Learn React
+          <img src={github_logo} alt="github" height={20} />
         </a>
-      </header>
+      </div>
+      <Layout />
     </div>
   );
 }
