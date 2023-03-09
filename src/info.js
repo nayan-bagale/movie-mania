@@ -22,8 +22,7 @@ function Info({ data }) {
             <p>{data.Runtime}</p>
           </div>
           <div className=" flex justify-evenly m-4">
-            {data.Genre &&
-              data.Genre.split(",").map((element) => {
+            {data.Genre.split(",").map((element) => {
                 console.log(element);
                 return (
                   <p className=" border border-slate-300 p-1 px-5 rounded text-slate-300">

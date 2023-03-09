@@ -34,9 +34,9 @@ function Layout() {
 
     let conData;
     if (Object.keys(data).length !== 0) {
-      conData = data.Response === 'True' ? <Info data={data} /> : <h1>{data.Error}</h1>;
+      conData = data.Response === 'True' ? <Info data={data} /> : <h1 className=' m-1 my-4'>{data.Error}</h1>;
     }else{
-      conData = <h1></h1>
+      conData = <h1> </h1>
     }
 
   return (

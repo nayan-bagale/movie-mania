@@ -14,15 +14,12 @@ function App() {
     right: "5px"
   };
 
+  const gt_link = "https://github.com/nayan-bagale/";
+
   return (
     <div className=" font-poppins bg-stone-900 h-screen flex justify-center items-center">
       <div className=" absolute top-0 right-0" style={style}>
-        <a
-          href="https://github.com/nayan-bagale/"
-          target="_blank"
-          className=" absolute"
-          style={logo}
-        >
+        <a href={gt_link} target="_blank" rel="noreferrer" className=" absolute" style={logo}>
           <img src={github_logo} alt="github" height={20} />
         </a>
       </div>
